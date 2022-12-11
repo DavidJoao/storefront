@@ -4,5 +4,4 @@ from django.http import HttpResponse
 # Is considered a request handler, gets requests and returns responses
 
 def say_hello(request):
-    return HttpResponse('Hello World')
-    
+    return render(request, 'hello.html')
